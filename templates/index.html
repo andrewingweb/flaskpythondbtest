@@ -1,0 +1,19 @@
+{% extends "layout.html" %} {% block body %}
+<center style="margin-top: 40px">
+  <div >
+  <form action="/btrs">
+    <input
+      style="margin: 5px"
+      autocomplete="off"
+      autofocus
+      name="name"
+      placeholder="Abkürzung"
+      type="text"
+      required
+    />
+    <br />
+    <input type="submit" />
+  </form>
+  </div>
+</center>
+{% endblock %}
