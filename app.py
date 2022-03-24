@@ -1,4 +1,3 @@
-from curses import longname
 from flask import Flask, render_template, request
 import pandas as pd
 
@@ -27,5 +26,6 @@ def searchByBcode():
     
     return render_template('btrs.html', btrs=btrs, lname=lname, type1=type1, regio=regio)
 
-    
+if __name__ == "__main__":
+    app.run()
 
